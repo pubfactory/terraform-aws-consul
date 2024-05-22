@@ -82,7 +82,6 @@ function install_dnsmasq {
   log_info "Installing Dnsmasq"
 
   if has_apt_get; then
-    sudo apt-get update -y
     sudo apt-get install -y dnsmasq
   elif has_yum; then
     sudo yum update -y
